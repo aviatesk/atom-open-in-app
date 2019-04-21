@@ -1,3 +1,5 @@
+"use babel";
+
 import * as Atom from "atom";
 import open from "open";
 import path from "path";

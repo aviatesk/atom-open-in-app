@@ -1,9 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Atom = require("atom");
-const open_1 = require("open");
-const path_1 = require("path");
-class OpenInApp {
+"use babel";
+import * as Atom from "atom";
+import open from "open";
+import path from "path";
+export default class OpenInApp {
     constructor() {
         this.subscriptions = new Atom.CompositeDisposable();
     }
@@ -50,7 +49,7 @@ class OpenInApp {
         }
     }
     openFile(filePath) {
-        const ext = path_1.default.extname(filePath);
+        const ext = path.extname(filePath);
         let applicationBindings;
         try {
             applicationBindings = JSON.parse(atom.config.get("open-in-app.applicationBindings"));
@@ -76,7 +75,6 @@ class OpenInApp {
         else {
             openApp = atom.config.get("open-in-app.defaultApplication");
         }
-        open_1.default(filePath, { app: openApp });
+        open(filePath, { app: openApp });
     }
 }
-exports.default = OpenInApp;

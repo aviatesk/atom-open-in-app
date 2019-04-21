@@ -1,3 +1,5 @@
+"use babel";
+
 import { expect } from "chai";
 import { join } from "path";
 
