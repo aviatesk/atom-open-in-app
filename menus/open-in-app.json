@@ -1,0 +1,23 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{
+      "label": "Open File in App",
+      "command": "open-in-app:open-file-from-editor"
+    }],
+    ".tree-view .file": [{
+      "label": "Open File in App",
+      "command": "open-in-app:open-file-on-tree-click"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "Open in App",
+      "submenu": [{
+          "label": "Open File From Editor",
+          "command": "open-in-app:open-file-from-editor"
+        }
+      ]
+    }]
+  }]
+}

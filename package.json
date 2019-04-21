@@ -1,0 +1,54 @@
+{
+  "name": "open-in-app",
+  "main": "./out/main",
+  "version": "0.0.0",
+  "description": "Open your file in any of your external application",
+  "keywords": [
+    "open",
+    "file",
+    "application",
+    "browser",
+    "html"
+  ],
+  "repository": "https://github.com/aviatesk/atom-open-in-app",
+  "license": "MIT",
+  "configSchema": {
+    "applicationBindings": {
+      "default": "{}",
+      "description": "Binds file extensions to any of your application. This field should be a valid JSON mapping from an extension to a path to an application.<br/>E.g., `{ \".html\": \"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\" }` will be a valid setting to open every html file in chrome on Windows.<br/>(**Note both keys and values need to be wrapped by _double_ quotations.**)",
+      "order": 1,
+      "title": "Application Bindings",
+      "type": "string"
+    },
+    "defaultApplication": {
+      "default": "",
+      "description": "Sets a default application in which files without any binding will be opened.\nIf you leave this field blank, then the files without application-binding should be opened in a _default_ application, which would be detected by your OS.<br/>E.g., Setting this field like `C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/bin/code`(**_Without double quotations_**) would open every non-binded file in VS Code. (But you know, we should NOT do this _at any cost_ !)",
+      "order": 2,
+      "title": "Default Application",
+      "type": "string"
+    }
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "open": "^6.1.0"
+  },
+  "scripts": {
+    "build": "tsc -p ./lib",
+    "typecheck": "tsc --noEmit -p ./lib && tsc --noEmit -p ./spec",
+    "lint": "tslint --project ./lib && tslint --project ./spec",
+    "test": "npm run typecheck && npm run lint"
+  },
+  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
+  "devDependencies": {
+    "@types/atom": "^1.36.0",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/open": "^6.1.0",
+    "atom-ts-spec-runner": "^1.1.1",
+    "chai": "^4.2.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.3"
+  }
+}
