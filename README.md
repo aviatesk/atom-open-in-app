@@ -2,6 +2,7 @@
 
 This very simple Atom package allows you open any of your file instantly from Atom in _any_ application you want.
 
+![overview](https://github.com/aviatesk/atom-open-in-app/blob/master/assets/overview.gif)
 
 
 <h2> TOC </h2>
@@ -66,7 +67,7 @@ This package is under [MIT License](LICENSE.md).
 
 ## Acknowledgements
 
-- While development, I cited considerable amount of code from [Open in Browser Atom.io Package](https://github.com/magbicaleman/open-in-browser) created by @magbicaleman.
+- While development, I cited considerable amount of code from [Open in Browser Atom.io Package](https://github.com/magbicaleman/open-in-browser) created by [@magbicaleman](https://github.com/magbicaleman).
 - This package is developed by TypeScript, I a lot referred to [Atom TypeScript](https://github.com/TypeStrong/atom-typescript) for "how to develop Atom package with TypeScript".
 
 
