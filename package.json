@@ -2,7 +2,7 @@
   "name": "open-in-app",
   "main": "./out/main",
   "version": "0.0.0",
-  "description": "Open your file in any of your external application",
+  "description": "Open your file in any of your external application instantly",
   "keywords": [
     "open",
     "file",
