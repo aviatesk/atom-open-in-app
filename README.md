@@ -2,7 +2,7 @@
 
 This very simple Atom package allows you open any of your file instantly from Atom in _any_ application you want.
 
-![overview](https://github.com/aviatesk/atom-open-in-app/blob/master/assets/overview.gif)
+![overview](https://github.com/aviatesk/atom-open-in-app/blob/master/assets/overview.gif?raw=true)
 
 
 <h2> TOC </h2>

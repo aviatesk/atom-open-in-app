@@ -8,7 +8,8 @@
     "file",
     "application",
     "browser",
-    "html"
+    "html",
+    "typescript"
   ],
   "repository": "https://github.com/aviatesk/atom-open-in-app",
   "license": "MIT",
