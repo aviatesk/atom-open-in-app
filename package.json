@@ -43,7 +43,7 @@
   },
   "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
   "devDependencies": {
-    "@types/atom": "1.36.0",
+    "@types/atom": "1.36.1",
     "@types/chai": "4.1.7",
     "@types/mocha": "5.2.6",
     "@types/open": "6.1.0",
