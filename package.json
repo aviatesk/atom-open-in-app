@@ -43,13 +43,13 @@
   },
   "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
   "devDependencies": {
-    "@types/atom": "^1.36.0",
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/open": "^6.1.0",
-    "atom-ts-spec-runner": "^1.1.1",
-    "chai": "^4.2.0",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.3"
+    "@types/atom": "1.36.0",
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.6",
+    "@types/open": "6.1.0",
+    "atom-ts-spec-runner": "1.1.1",
+    "chai": "4.2.0",
+    "tslint": "5.16.0",
+    "typescript": "3.4.3"
   }
 }
