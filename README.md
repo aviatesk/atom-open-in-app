@@ -47,9 +47,9 @@ Or you can use keyboard shortcuts:
 
 **Default Application**:
 - Sets a default application in which files without any binding will be opened. If you leave this field blank, then the files without application-binding should be opened in a _default_ application, which would be detected by your OS.
-- E.g.: `C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/bin/code`(**no need to wrap by double quotations this time**) would open every non-binded file in VS Code. (But you know, we should NOT do this _at any cost_ 😜 !)
+- E.g.: `C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/bin/code`(**no need to wrap by double quotations this time**) would open every non-bound file in VS Code. (But you know, we Atom lovers should NOT do this _at any cost_ 😜 !)
 
-> Configuration example on Windows: ~/config.cson
+> Configuration example on Windows: ~/.atom/config.cson
 
 ```coffee
 "*":
