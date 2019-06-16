@@ -1,3 +1,7 @@
+## v0.1.3
+
+- Update dependencies
+
 ## v0.1.2
 
 - Ignore npm vulnerability check since it doesn't affect user usage
