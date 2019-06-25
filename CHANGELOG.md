@@ -1,3 +1,7 @@
+## v0.1.5
+
+- Add [File extensions opened when selected in Advanced-Open-File](README.md#files-extensions-opened-instead-of-advanced-open-file) feature
+
 ## v0.1.4
 
 - Modify description
