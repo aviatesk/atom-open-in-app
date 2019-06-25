@@ -2,7 +2,7 @@
 import * as Atom from "atom";
 import open from "open";
 import path from "path";
-export default class OpenInApp {
+class OpenInApp {
     constructor() {
         this.subscriptions = new Atom.CompositeDisposable();
     }
@@ -14,6 +14,18 @@ export default class OpenInApp {
     }
     deactivate() {
         this.subscriptions.dispose();
+    }
+    consumeEventService(service) {
+        const openEventListener = service.onDidOpenPath((filePath) => {
+            const ext = path.extname(filePath);
+            const targetExts = atom.config.get("open-in-app.advancedOpenFileExtensions");
+            if (targetExts.includes(ext)) {
+                this.openFile(filePath);
+            }
+        });
+        return new Atom.Disposable(() => {
+            openEventListener.dispose();
+        });
     }
     openFileFromEditor() {
         const filePath = this.getFilePath();
@@ -78,3 +90,4 @@ export default class OpenInApp {
         open(filePath, { app: openApp });
     }
 }
+export const openInApp = new OpenInApp();

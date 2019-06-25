@@ -1,3 +1,11 @@
 "use babel";
-import OpenInApp from "./open-in-app";
-export default new OpenInApp();
+import { openInApp } from "./open-in-app";
+export function activate() {
+    openInApp.activate();
+}
+export function deactivate() {
+    openInApp.deactivate();
+}
+export function consumeEventService(service) {
+    openInApp.consumeEventService(service);
+}
