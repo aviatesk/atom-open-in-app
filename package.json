@@ -43,7 +43,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "open": "6.3.0"
+    "open": "6.4.0"
   },
   "consumedServices": {
     "advanced-open-file-events": {
