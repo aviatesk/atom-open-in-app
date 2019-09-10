@@ -67,6 +67,6 @@
     "atom-ts-spec-runner": "1.1.1",
     "chai": "4.2.0",
     "tslint": "5.19.0",
-    "typescript": "3.5.3"
+    "typescript": "3.6.3"
   }
 }
