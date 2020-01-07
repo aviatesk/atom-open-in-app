@@ -46,28 +46,10 @@ class OpenInApp {
 
   openFile(filePath) {
     const ext = path.extname(filePath);
-
-    let applicationBindings;
-    try {
-      applicationBindings = JSON.parse(atom.config.get("open-in-app.applicationBindings"));
-    } catch (err) {
-      if (err instanceof SyntaxError) {
-        atom.notifications.addWarning("Open In App", {
-          description: "Can't parse `applicationBindings` into JSON object. Make sure your setting is like: `{ \".html\": " +
-            "\"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\" }`",
-          dismissable: true,
-        });
-        applicationBindings = {};
-      } else {
-        atom.notifications.addError("Open In App", { description: err });
-        return;
-      }
-    }
-
-    const openApp = applicationBindings.hasOwnProperty(ext) ?
+    const applicationBindings = atom.config.get("open-in-app.applicationBindings");
+    const openApp = (applicationBindings && applicationBindings.hasOwnProperty(ext)) ?
       applicationBindings[ext] :
       atom.config.get("open-in-app.defaultApplication");
-
     open(filePath, { app: openApp });
   }
 }
