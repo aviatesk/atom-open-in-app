@@ -8,8 +8,7 @@
     "file",
     "application",
     "browser",
-    "html",
-    "typescript"
+    "html"
   ],
   "repository": "https://github.com/aviatesk/atom-open-in-app",
   "license": "MIT",
@@ -51,22 +50,5 @@
         "0.1.0": "consumeEventService"
       }
     }
-  },
-  "scripts": {
-    "build": "tsc -p ./lib",
-    "typecheck": "tsc --noEmit -p ./lib && tsc --noEmit -p ./spec",
-    "lint": "tslint --project ./lib && tslint --project ./spec",
-    "test": "npm run typecheck && npm run lint"
-  },
-  "atomTestRunner": "./node_modules/atom-ts-spec-runner/runner.js",
-  "devDependencies": {
-    "@types/atom": "1.36.1",
-    "@types/chai": "4.2.7",
-    "@types/mocha": "5.2.7",
-    "@types/open": "^6.2.1",
-    "atom-ts-spec-runner": "1.1.1",
-    "chai": "4.2.0",
-    "tslint": "5.20.1",
-    "typescript": "3.7.4"
   }
 }

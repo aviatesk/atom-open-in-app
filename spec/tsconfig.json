@@ -1,4 +1,0 @@
-{
-  "compileOnSave": false,
-  "extends": "../lib/tsconfig.json"
-}
