@@ -43,7 +43,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "open": "7.0.0"
+    "open": "^6.4.0"
   },
   "consumedServices": {
     "advanced-open-file-events": {
@@ -63,7 +63,7 @@
     "@types/atom": "1.36.1",
     "@types/chai": "4.2.7",
     "@types/mocha": "5.2.7",
-    "@types/open": "6.1.0",
+    "@types/open": "^6.2.1",
     "atom-ts-spec-runner": "1.1.1",
     "chai": "4.2.0",
     "tslint": "5.20.1",
