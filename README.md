@@ -24,19 +24,17 @@ This very simple Atom package allows you open any of your file instantly from At
 
 - Files can be opened both from text editor and tree view.
 - You can open files easily from context menu, instantly with key bindings.
-    * **Keyboard shortcut support is provided even on `.tree-view` element**.
-- **Application bindings are configurable**: You can set default application in which files gonna be opened, and even more create file-extension to application mappings.
-
-(_For developers, this package is developed with TypeScript, and thus the code can be a simple example for you to develop an Atom package with TypeScript. Any question or idea is welcome !_ 😆)
+    * **Keyboard shortcut support is provided on `.tree-view` panel as well**.
+- **The bindings between file extension and application are configurable**: i.e. You can set a default application in which files gonna be opened, and also create additional file-extension to application mappings.
 
 
 ## Usage
 
 You can open any of your file from context menu:
-- **Right-click text-editor or tree-view -> Select `Open File in App`**
+- **Right-click text-editor or tree-view ⟶ Select `Open File in App` menu**
 
 Or you can use keyboard shortcuts:
-- (In text editor or tree-view focus) **Just type <kbd>Ctrl-Shift-B</kbd>**
+- (with focusing text editor or tree-view) **Just type <kbd>Ctrl-Shift-B</kbd>**
 
 
 ## Configuration
@@ -69,13 +67,12 @@ This package is under [MIT License](LICENSE.md).
 
 ## Acknowledgements
 
-- While development, I cited considerable amount of code from [Open in Browser Atom.io Package](https://github.com/magbicaleman/open-in-browser) created by [@magbicaleman](https://github.com/magbicaleman).
-- This package is developed by TypeScript, I a lot referred to [Atom TypeScript](https://github.com/TypeStrong/atom-typescript) for "how to develop Atom package with TypeScript".
+While development, I cited considerable amount of code from [Open in Browser Atom.io Package](https://github.com/magbicaleman/open-in-browser) created by [@magbicaleman](https://github.com/magbicaleman).
 
 
 ## Author
 
-- **KADOWAKI, Shuhei** - *Undergraduate@Kyoto Univ.* - [aviatesk]
+- **Shuhei Kadowaki** - *Undergraduate@Kyoto Univ.* - [aviatesk]
 
 
 <!-- Links -->
