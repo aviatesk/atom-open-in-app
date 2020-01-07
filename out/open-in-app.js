@@ -39,17 +39,11 @@ class OpenInApp {
         if (!treeView) {
             return;
         }
-        treeView.mainModule.treeViewOpenPromise
-            .then((treeViewPromise) => {
-            const filePath = treeViewPromise.selectedPath;
-            if (!filePath) {
-                return;
-            }
-            this.openFile(filePath);
-        })
-            .catch((err) => {
-            atom.notifications.addError(err.toString());
-        });
+        const filePath = treeView.mainModule.treeView.selectedPath;
+        if (!filePath) {
+            return;
+        }
+        this.openFile(filePath);
     }
     getFilePath() {
         const editor = atom.workspace.getActiveTextEditor();

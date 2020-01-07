@@ -63,15 +63,9 @@ class OpenInApp {
   private openFileFromTree(): void {
     const treeView = atom.packages.getActivePackage("tree-view");
     if (!treeView) { return; }
-    (treeView as any).mainModule.treeViewOpenPromise
-      .then((treeViewPromise: any) => {
-        const filePath = treeViewPromise.selectedPath;
-        if (!filePath) { return; }
-        this.openFile(filePath);
-      })
-      .catch((err: any) => {
-        atom.notifications.addError(err.toString());
-      });
+    const filePath = (treeView as any).mainModule.treeView.selectedPath;
+    if (!filePath) { return; }
+    this.openFile(filePath);
   }
 
   private getFilePath(): void | string {
