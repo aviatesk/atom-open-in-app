@@ -5,21 +5,6 @@ This very simple :atom: package allows you open any of your file instantly from 
 ![overview](https://github.com/aviatesk/atom-open-in-app/blob/master/assets/overview.gif?raw=true)
 
 
-<h2> TOC </h2>
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=3 orderedList=false} -->
-<!-- code_chunk_output -->
-
-- [Features](#features)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Author](#author)
-
-<!-- /code_chunk_output -->
-
-
 ## Features
 
 - Files can be opened both from text editor and tree view.
