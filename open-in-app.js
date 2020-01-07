@@ -17,18 +17,6 @@ class OpenInApp {
   deactivate() {
     this.subscriptions.dispose();
   }
-  consumeEventService(service) {
-    const openEventListener = service.onDidOpenPath((filePath) => {
-      const ext = path.extname(filePath);
-      const targetExts = atom.config.get("open-in-app.advancedOpenFileExtensions");
-      if (targetExts.includes(ext)) {
-        this.openFile(filePath);
-      }
-    });
-    return new Atom.Disposable(() => {
-      openEventListener.dispose();
-    });
-  }
   openFileFromEditor() {
     const filePath = this.getFilePath();
     if (!filePath) {

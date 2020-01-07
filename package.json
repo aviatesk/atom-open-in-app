@@ -26,16 +26,6 @@
       "default": "",
       "type": "string",
       "order": 2
-    },
-    "advancedOpenFileExtensions": {
-      "title": "File extensions opened when selected in Advanced-Open-File",
-      "description": "Sets file extensions that you want to open in a bound application when selected in [Advanced-Open-File](https://atom.io/packages/advanced-open-file).<br/>E.g.: `[.html, .pdf]` would open HTML and PDF files in the bound applications when they are opened by Advanced-Open-File.",
-      "default": [],
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "order": 3
     }
   },
   "engines": {
@@ -43,12 +33,5 @@
   },
   "dependencies": {
     "open": "^6.4.0"
-  },
-  "consumedServices": {
-    "advanced-open-file-events": {
-      "versions": {
-        "0.1.0": "consumeEventService"
-      }
-    }
   }
 }

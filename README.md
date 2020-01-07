@@ -38,9 +38,6 @@ You can open any of your file from context menu:
 Or you can use keyboard shortcuts:
 - (In text editor or tree-view focus) **Just type <kbd>Ctrl-Shift-B</kbd>**
 
-If you want to open a file in an external application when selecting it on [Advanced-Open-File](https://atom.io/packages/advanced-open-file):
-- Set the [configuration](#files-extensions-opened-instead-of-advanced-open-file)
-- Select a file from Advanced-Open-File
 
 ## Configuration
 
@@ -54,20 +51,12 @@ If you want to open a file in an external application when selecting it on [Adva
 - Sets a default application in which files without any binding will be opened. If you leave this field blank, then the files without application-binding should be opened in a _default_ application, which would be detected by your OS.
 - E.g.: `C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/bin/code`(**no need to wrap by double quotations this time**) would open every non-bound file in VS Code. (But you know, we, Atom lovers, should NOT do this _at any cost_ 😜 !)
 
-#### File extensions opened when selected in Advanced-Open-File
-
-- Sets file extensions that you want to open in a bound application when selected in [Advanced-Open-File](https://atom.io/packages/advanced-open-file).
-- E.g.: `[.html, .pdf]` would open HTML and PDF files in the bound applications when they are opened by Advanced-Open-File.
-
 > Configuration example on Windows: ~/.atom/config.cson
 
 ```coffee
 "*":
   ...
   "open-in-app":
-    advancedOpenFileExtensions: [
-      ".pdf"
-    ]
     applicationBindings: "{ \".html\": \"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe\", \".txt\": \"C:/Windows/System32/notepad.exe\" }"
     defaultApplication: "C:/Users/USERNAME/AppData/Local/Programs/Microsoft VS Code/bin/code"
   ...
